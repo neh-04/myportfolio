@@ -365,31 +365,74 @@ footer {
 }
 
 /* Responsive */
+/* Responsive */
 @media (max-width: 768px) {
+    .navbar {
+        width: 90%;
+        /* Wider pill on mobile */
+        padding: 0.8rem 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: 20px;
+        /* Slightly less round to fit content */
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+        /* Wrap links if needed */
+        justify-content: center;
+        width: 100%;
+    }
+
     .hero-section {
         flex-direction: column;
         text-align: center;
-        padding-top: 120px;
+        padding-top: 180px;
+        /* More space for taller mobile nav */
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .hero-title {
         font-size: 3rem;
     }
 
-    .nav-links {
-        display: none;
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .navbar {
-        width: 90%;
-        left: 5%;
+    .cta-group {
+        justify-content: center;
     }
 
-    .profile-placeholder {
+    .profile-img {
         margin-top: 3rem;
         width: 100%;
         max-width: 300px;
+        /* Keep it contained */
         height: 350px;
+    }
+
+    .section-padding {
+        padding: 4rem 5%;
+    }
+
+    h2.section-heading {
+        font-size: 2rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .separator {
+        display: none;
     }
 }
 
